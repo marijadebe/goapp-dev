@@ -1,0 +1,58 @@
+body {
+	margin: 0;
+	background: url("../resource/pattern.png") repeat 0 0;
+}
+#header {
+	padding: 10px;
+	margin-bottom: 0px;
+	width: 100%;
+	background-color: #0c87c9;
+	color: white;
+}
+#content {
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.box {
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid black;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: white;
+	justify-content: center;
+	align-self: center;
+}
+@media (max-width: 800px) {
+  #content {
+    flex-direction: column;
+  }
+}
+#errors {
+	margin: 10px;
+}
+input[type=file] {
+	border: 1px solid black;
+}
+.navbar-collapse.collapsing{overflow:hidden;}
+#chat::-webkit-scrollbar {
+  width: 5px;
+}
+ 
+#chat::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+ 
+#chat::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.chat-content::-webkit-scrollbar-track {
+	display: none;
+}
+.chat-content::-webkit-scrollbar-thumb {
+	display: none; 
+}
